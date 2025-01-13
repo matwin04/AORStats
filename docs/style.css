@@ -17,6 +17,9 @@ th, td {
 th {
     background-color: darkgray;
 }
+p {
+    margin: 2px;
+}
 tr:hover {
     background-color: #f4f4f4;
 }
