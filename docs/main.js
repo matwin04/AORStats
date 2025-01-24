@@ -1,4 +1,4 @@
-const jsonFile = './leaderboard.json';
+const jsonFile = './Leaderboard.json';
 fetch(jsonFile)
     .then(response => response.json())
     .then(data=>{
