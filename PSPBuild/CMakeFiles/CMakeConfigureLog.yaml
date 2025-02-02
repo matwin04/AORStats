@@ -1,0 +1,713 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The target system is: Generic - 1 - mips
+      The host system is: Darwin - 24.1.0 - arm64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /Users/frostie/pspdev/bin/psp-gcc 
+      Build flags: -I/Users/frostie/pspdev/psp/include;-I/Users/frostie/pspdev/psp/sdk/include;-DPSP
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /Users/frostie/Projects/PSPlayer/PSPBuild/CMakeFiles/3.31.0/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /Users/frostie/pspdev/bin/psp-g++ 
+      Build flags: -I/Users/frostie/pspdev/psp/include;-I/Users/frostie/pspdev/psp/sdk/include;-DPSP
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /Users/frostie/Projects/PSPlayer/PSPBuild/CMakeFiles/3.31.0/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/Users/frostie/Projects/PSPlayer/PSPBuild/CMakeFiles/CMakeScratch/TryCompile-M8FdYq"
+      binary: "/Users/frostie/Projects/PSPlayer/PSPBuild/CMakeFiles/CMakeScratch/TryCompile-M8FdYq"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-I/Users/frostie/pspdev/psp/include -I/Users/frostie/pspdev/psp/sdk/include -DPSP"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/Users/frostie/pspdev/lib -L/Users/frostie/pspdev/psp/lib -L/Users/frostie/pspdev/psp/sdk/lib -Wl,-zmax-page-size=128"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/frostie/Projects/PSPlayer/PSPBuild/CMakeFiles/CMakeScratch/TryCompile-M8FdYq'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_a5c24/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_a5c24.dir/build.make CMakeFiles/cmTC_a5c24.dir/build
+        gmake[1]: Entering directory '/Users/frostie/Projects/PSPlayer/PSPBuild/CMakeFiles/CMakeScratch/TryCompile-M8FdYq'
+        Building C object CMakeFiles/cmTC_a5c24.dir/CMakeCCompilerABI.c.obj
+        /Users/frostie/pspdev/bin/psp-gcc -DPSP -D_PSP_FW_VERSION=600 -D__PSP__  -I/Users/frostie/pspdev/psp/include -I/Users/frostie/pspdev/psp/sdk/include -DPSP    -v -o CMakeFiles/cmTC_a5c24.dir/CMakeCCompilerABI.c.obj -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/Users/frostie/pspdev/bin/psp-gcc
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/Users/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/Users/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/Users/frostie/pspdev/psp/include' '-I' '/Users/frostie/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_a5c24.dir/CMakeCCompilerABI.c.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_a5c24.dir/'
+         /Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/cc1 -quiet -v -I /Users/frostie/pspdev/psp/include -I /Users/frostie/pspdev/psp/sdk/include -iprefix /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/ -isysroot /Users/frostie/pspdev/bin/../psp -DPSP=1 -D__PSP__=1 -D_PSP=1 -D__psp__=1 -D PSP -D _PSP_FW_VERSION=600 -D __PSP__ -D PSP /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_a5c24.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mhard-float -msingle-float -version -o /var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccs8bcA5.s
+        GNU C17 (GCC) version 14.1.0 (psp)
+        	compiled by GNU C version Apple LLVM 15.0.0 (clang-1500.3.9.4), GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/Users/frostie/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/include"
+        ignoring nonexistent directory "/Users/frostie/pspdev/bin/../psp/usr/local/include"
+        ignoring duplicate directory "/Users/frostie/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/include-fixed"
+        ignoring duplicate directory "/Users/frostie/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include"
+        ignoring duplicate directory "/Users/frostie/pspdev/bin/../psp/include"
+        ignoring duplicate directory "/Users/frostie/pspdev/psp/include"
+          as it is a non-system directory that duplicates a system directory
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Users/frostie/pspdev/psp/sdk/include
+         /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/include
+         /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/include-fixed
+         /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include
+        End of search list.
+        Compiler executable checksum: 6378857ac7844d074fdb28a01d37fdff
+        COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/Users/frostie/pspdev/psp/include' '-I' '/Users/frostie/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_a5c24.dir/CMakeCCompilerABI.c.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_a5c24.dir/'
+         /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/as -EL -O1 -mabi=eabi -mhard-float -msingle-float -o CMakeFiles/cmTC_a5c24.dir/CMakeCCompilerABI.c.obj /var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccs8bcA5.s
+        COMPILER_PATH=/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../libexec/gcc/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/
+        LIBRARY_PATH=/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../lib/gcc/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/Users/frostie/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/Users/frostie/pspdev/psp/include' '-I' '/Users/frostie/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_a5c24.dir/CMakeCCompilerABI.c.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_a5c24.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_a5c24
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a5c24.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/Users/frostie/pspdev/bin/psp-gcc
+        COLLECT_LTO_WRAPPER=/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/Users/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/Users/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.1.0 (GCC) 
+        COMPILER_PATH=/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../libexec/gcc/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/
+        LIBRARY_PATH=/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../lib/gcc/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/Users/frostie/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-I' '/Users/frostie/pspdev/psp/include' '-I' '/Users/frostie/pspdev/psp/sdk/include' '-D' 'PSP' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-v' '-o' 'cmTC_a5c24' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_a5c24.'
+         /Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/collect2 -plugin /Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/liblto_plugin.so -plugin-opt=/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccPxWQKL.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lpthreadglue -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lcglue -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lpsputility -plugin-opt=-pass-through=-lpsprtc -plugin-opt=-pass-through=-lpspnet_inet -plugin-opt=-pass-through=-lpspnet_resolver -plugin-opt=-pass-through=-lpspsdk -plugin-opt=-pass-through=-lpspmodinfo -plugin-opt=-pass-through=-lpspuser -plugin-opt=-pass-through=-lpspkernel -plugin-opt=-pass-through=-lgcc --sysroot=/Users/frostie/pspdev/bin/../psp -EL -o cmTC_a5c24 /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o -L/Users/frostie/pspdev/lib -L/Users/frostie/pspdev/psp/lib -L/Users/frostie/pspdev/psp/sdk/lib -L/Users/frostie/pspdev/lib -L/Users/frostie/pspdev/psp/lib -L/Users/frostie/pspdev/psp/sdk/lib -L/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0 -L/Users/frostie/pspdev/bin/../lib/gcc -L/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib -L/Users/frostie/pspdev/bin/../psp/lib -zmax-page-size=128 CMakeFiles/cmTC_a5c24.dir/CMakeCCompilerABI.c.obj -lgcc -lm --start-group -lpthreadglue -lpthread -lcglue -lc --end-group -lpsputility -lpsprtc -lpspnet_inet -lpspnet_resolver -lpspsdk -lpspmodinfo -lpspuser -lpspkernel -lgcc /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o
+        /Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper -fresolution=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccPxWQKL.res -flinker-output=exec /Users/frostie/pspdev/psp/lib/libpthread.a@0x5edaa /Users/frostie/pspdev/psp/lib/libpthread.a@0x60daa /Users/frostie/pspdev/psp/lib/libpthread.a@0x62fc2 /Users/frostie/pspdev/psp/lib/libpthread.a@0x64a0e /Users/frostie/pspdev/psp/lib/libpthread.a@0x1aae /Users/frostie/pspdev/psp/lib/libpthread.a@0x4fe6 /Users/frostie/pspdev/psp/lib/libpthread.a@0x6fda /Users/frostie/pspdev/psp/lib/libpthread.a@0xb406 /Users/frostie/pspdev/psp/lib/libpthread.a@0x19c7a /Users/frostie/pspdev/psp/lib/libpthread.a@0x1bace /Users/frostie/pspdev/psp/lib/libpthread.a@0x26592 /Users/frostie/pspdev/psp/lib/libpthread.a@0x52ef2 /Users/frostie/pspdev/psp/lib/libpthread.a@0x577f2 /Users/frostie/pspdev/psp/lib/libpthread.a@0x5b1be /Users/frostie/pspdev/psp/lib/libpthread.a@0x5cc92 /Users/frostie/pspdev/psp/lib/libpthread.a@0x66c5e /Users/frostie/pspdev/psp/lib/libpthread.a@0x68122 /Users/frostie/pspdev/psp/lib/libpthread.a@0x6a5de /Users/frostie/pspdev/psp/lib/libpthread.a@0x35ce 
+        /Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper -fresolution=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccPxWQKL.res -flinker-output=exec /Users/frostie/pspdev/psp/lib/libpthread.a@0x5edaa /Users/frostie/pspdev/psp/lib/libpthread.a@0x60daa /Users/frostie/pspdev/psp/lib/libpthread.a@0x62fc2 /Users/frostie/pspdev/psp/lib/libpthread.a@0x64a0e /Users/frostie/pspdev/psp/lib/libpthread.a@0x1aae /Users/frostie/pspdev/psp/lib/libpthread.a@0x4fe6 /Users/frostie/pspdev/psp/lib/libpthread.a@0x6fda /Users/frostie/pspdev/psp/lib/libpthread.a@0xb406 /Users/frostie/pspdev/psp/lib/libpthread.a@0x19c7a /Users/frostie/pspdev/psp/lib/libpthread.a@0x1bace /Users/frostie/pspdev/psp/lib/libpthread.a@0x26592 /Users/frostie/pspdev/psp/lib/libpthread.a@0x52ef2 /Users/frostie/pspdev/psp/lib/libpthread.a@0x577f2 /Users/frostie/pspdev/psp/lib/libpthread.a@0x5b1be /Users/frostie/pspdev/psp/lib/libpthread.a@0x5cc92 /Users/frostie/pspdev/psp/lib/libpthread.a@0x66c5e /Users/frostie/pspdev/psp/lib/libpthread.a@0x68122 /Users/frostie/pspdev/psp/lib/libpthread.a@0x6a5de /Users/frostie/pspdev/psp/lib/libpthread.a@0x35ce 
+        /Users/frostie/pspdev/bin/psp-gcc @/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccK48ml7
+        Using built-in specs.
+        COLLECT_GCC=/Users/frostie/pspdev/bin/psp-gcc
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/Users/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/Users/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-v' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans-output-list=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//cc7r8IxJ.ltrans.out' '-fwpa' '-fresolution=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccPxWQKL.res' '-flinker-output=exec'
+         /Users/frostie/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/lto1 -quiet -dumpbase ./cmTC_a5c24.wpa -mno-gpopt -mhard-float -msingle-float -mhard-float -msingle-float -O3 -version -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fltrans-output-list=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//cc7r8IxJ.ltrans.out -fwpa -fresolution=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccPxWQKL.res -flinker-output=exec @/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//cc6N2CRC
+        GNU GIMPLE (GCC) version 14.1.0 (psp)
+        	compiled by GNU C version Apple LLVM 15.0.0 (clang-1500.3.9.4), GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        COMPILER_PATH=/Users/frostie/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../lib/gcc/../../libexec/gcc/:/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../libexec/gcc/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/
+        LIBRARY_PATH=/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../lib/gcc/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/Users/frostie/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-v' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans-output-list=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//cc7r8IxJ.ltrans.out' '-fwpa' '-fresolution=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccPxWQKL.res' '-flinker-output=exec' '-dumpdir' './cmTC_a5c24.wpa.'
+        /Users/frostie/pspdev/bin/psp-gcc @/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//cctZjOIA
+        Using built-in specs.
+        COLLECT_GCC=/Users/frostie/pspdev/bin/psp-gcc
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/Users/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/Users/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-v' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//cc7r8IxJ.ltrans0.ltrans.o'
+         /Users/frostie/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/lto1 -quiet -dumpbase ./cmTC_a5c24.ltrans0.ltrans -mno-gpopt -mhard-float -msingle-float -mhard-float -msingle-float -O3 -version -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fltrans @/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccFYEC7j -o /var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccmnYRJO.s
+        GNU GIMPLE (GCC) version 14.1.0 (psp)
+        	compiled by GNU C version Apple LLVM 15.0.0 (clang-1500.3.9.4), GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-v' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//cc7r8IxJ.ltrans0.ltrans.o'
+         /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/as -EL -O2 -mabi=eabi -mhard-float -mhard-float -msingle-float -msingle-float -o /var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//cc7r8IxJ.ltrans0.ltrans.o /var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccmnYRJO.s
+        COMPILER_PATH=/Users/frostie/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../lib/gcc/../../libexec/gcc/:/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../libexec/gcc/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/
+        LIBRARY_PATH=/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../lib/gcc/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/Users/frostie/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-v' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//cc7r8IxJ.ltrans0.ltrans.o' '-dumpdir' './cmTC_a5c24.ltrans0.ltrans.'
+        COLLECT_GCC_OPTIONS='-I' '/Users/frostie/pspdev/psp/include' '-I' '/Users/frostie/pspdev/psp/sdk/include' '-D' 'PSP' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-v' '-o' 'cmTC_a5c24' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_a5c24.'
+        /Users/frostie/pspdev/bin/psp-gcc -I/Users/frostie/pspdev/psp/include -I/Users/frostie/pspdev/psp/sdk/include -DPSP  -L/Users/frostie/pspdev/lib -L/Users/frostie/pspdev/psp/lib -L/Users/frostie/pspdev/psp/sdk/lib -Wl,-zmax-page-size=128 -v CMakeFiles/cmTC_a5c24.dir/CMakeCCompilerABI.c.obj -o cmTC_a5c24   -L/Users/frostie/pspdev/lib  -L/Users/frostie/pspdev/psp/lib  -L/Users/frostie/pspdev/psp/sdk/lib
+        gmake[1]: Leaving directory '/Users/frostie/Projects/PSPlayer/PSPBuild/CMakeFiles/CMakeScratch/TryCompile-M8FdYq'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/Users/frostie/pspdev/psp/sdk/include]
+          add: [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/include]
+          add: [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/include-fixed]
+          add: [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include]
+        end of search list found
+        collapse include dir [/Users/frostie/pspdev/psp/sdk/include] ==> [/Users/frostie/pspdev/psp/sdk/include]
+        collapse include dir [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/include] ==> [/Users/frostie/pspdev/lib/gcc/psp/14.1.0/include]
+        collapse include dir [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/include-fixed] ==> [/Users/frostie/pspdev/lib/gcc/psp/14.1.0/include-fixed]
+        collapse include dir [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include] ==> [/Users/frostie/pspdev/psp/include]
+        implicit include dirs: [/Users/frostie/pspdev/psp/sdk/include;/Users/frostie/pspdev/lib/gcc/psp/14.1.0/include;/Users/frostie/pspdev/lib/gcc/psp/14.1.0/include-fixed;/Users/frostie/pspdev/psp/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/Users/frostie/Projects/PSPlayer/PSPBuild/CMakeFiles/CMakeScratch/TryCompile-M8FdYq']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_a5c24/fast]
+        ignore line: [/opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_a5c24.dir/build.make CMakeFiles/cmTC_a5c24.dir/build]
+        ignore line: [gmake[1]: Entering directory '/Users/frostie/Projects/PSPlayer/PSPBuild/CMakeFiles/CMakeScratch/TryCompile-M8FdYq']
+        ignore line: [Building C object CMakeFiles/cmTC_a5c24.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [/Users/frostie/pspdev/bin/psp-gcc -DPSP -D_PSP_FW_VERSION=600 -D__PSP__  -I/Users/frostie/pspdev/psp/include -I/Users/frostie/pspdev/psp/sdk/include -DPSP    -v -o CMakeFiles/cmTC_a5c24.dir/CMakeCCompilerABI.c.obj -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/Users/frostie/pspdev/bin/psp-gcc]
+        ignore line: [Target: psp]
+        ignore line: [Configured with: ../configure --quiet --prefix=/Users/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/Users/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --silent]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.1.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/Users/frostie/pspdev/psp/include' '-I' '/Users/frostie/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_a5c24.dir/CMakeCCompilerABI.c.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_a5c24.dir/']
+        ignore line: [ /Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/cc1 -quiet -v -I /Users/frostie/pspdev/psp/include -I /Users/frostie/pspdev/psp/sdk/include -iprefix /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/ -isysroot /Users/frostie/pspdev/bin/../psp -DPSP=1 -D__PSP__=1 -D_PSP=1 -D__psp__=1 -D PSP -D _PSP_FW_VERSION=600 -D __PSP__ -D PSP /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_a5c24.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mhard-float -msingle-float -version -o /var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccs8bcA5.s]
+        ignore line: [GNU C17 (GCC) version 14.1.0 (psp)]
+        ignore line: [	compiled by GNU C version Apple LLVM 15.0.0 (clang-1500.3.9.4)  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/Users/frostie/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/include"]
+        ignore line: [ignoring nonexistent directory "/Users/frostie/pspdev/bin/../psp/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/Users/frostie/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "/Users/frostie/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include"]
+        ignore line: [ignoring duplicate directory "/Users/frostie/pspdev/bin/../psp/include"]
+        ignore line: [ignoring duplicate directory "/Users/frostie/pspdev/psp/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /Users/frostie/pspdev/psp/sdk/include]
+        ignore line: [ /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/include]
+        ignore line: [ /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/include-fixed]
+        ignore line: [ /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 6378857ac7844d074fdb28a01d37fdff]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/Users/frostie/pspdev/psp/include' '-I' '/Users/frostie/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_a5c24.dir/CMakeCCompilerABI.c.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_a5c24.dir/']
+        ignore line: [ /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/as -EL -O1 -mabi=eabi -mhard-float -msingle-float -o CMakeFiles/cmTC_a5c24.dir/CMakeCCompilerABI.c.obj /var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccs8bcA5.s]
+        ignore line: [COMPILER_PATH=/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../libexec/gcc/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/]
+        ignore line: [LIBRARY_PATH=/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../lib/gcc/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/Users/frostie/pspdev/bin/../psp/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/Users/frostie/pspdev/psp/include' '-I' '/Users/frostie/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_a5c24.dir/CMakeCCompilerABI.c.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_a5c24.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_a5c24]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a5c24.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/Users/frostie/pspdev/bin/psp-gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper]
+        ignore line: [Target: psp]
+        ignore line: [Configured with: ../configure --quiet --prefix=/Users/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/Users/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --silent]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.1.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../libexec/gcc/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/]
+        ignore line: [LIBRARY_PATH=/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../lib/gcc/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/Users/frostie/pspdev/bin/../psp/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-I' '/Users/frostie/pspdev/psp/include' '-I' '/Users/frostie/pspdev/psp/sdk/include' '-D' 'PSP' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-v' '-o' 'cmTC_a5c24' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_a5c24.']
+        link line: [ /Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/collect2 -plugin /Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/liblto_plugin.so -plugin-opt=/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccPxWQKL.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lpthreadglue -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lcglue -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lpsputility -plugin-opt=-pass-through=-lpsprtc -plugin-opt=-pass-through=-lpspnet_inet -plugin-opt=-pass-through=-lpspnet_resolver -plugin-opt=-pass-through=-lpspsdk -plugin-opt=-pass-through=-lpspmodinfo -plugin-opt=-pass-through=-lpspuser -plugin-opt=-pass-through=-lpspkernel -plugin-opt=-pass-through=-lgcc --sysroot=/Users/frostie/pspdev/bin/../psp -EL -o cmTC_a5c24 /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o -L/Users/frostie/pspdev/lib -L/Users/frostie/pspdev/psp/lib -L/Users/frostie/pspdev/psp/sdk/lib -L/Users/frostie/pspdev/lib -L/Users/frostie/pspdev/psp/lib -L/Users/frostie/pspdev/psp/sdk/lib -L/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0 -L/Users/frostie/pspdev/bin/../lib/gcc -L/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib -L/Users/frostie/pspdev/bin/../psp/lib -zmax-page-size=128 CMakeFiles/cmTC_a5c24.dir/CMakeCCompilerABI.c.obj -lgcc -lm --start-group -lpthreadglue -lpthread -lcglue -lc --end-group -lpsputility -lpsprtc -lpspnet_inet -lpspnet_resolver -lpspsdk -lpspmodinfo -lpspuser -lpspkernel -lgcc /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o]
+          arg [/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccPxWQKL.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lm] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthreadglue] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lcglue] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpsputility] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpsprtc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspnet_inet] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspnet_resolver] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspsdk] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspmodinfo] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspuser] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspkernel] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--sysroot=/Users/frostie/pspdev/bin/../psp] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_a5c24] ==> ignore
+          arg [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o] ==> obj [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o]
+          arg [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o] ==> obj [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o]
+          arg [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o] ==> obj [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o]
+          arg [-L/Users/frostie/pspdev/lib] ==> dir [/Users/frostie/pspdev/lib]
+          arg [-L/Users/frostie/pspdev/psp/lib] ==> dir [/Users/frostie/pspdev/psp/lib]
+          arg [-L/Users/frostie/pspdev/psp/sdk/lib] ==> dir [/Users/frostie/pspdev/psp/sdk/lib]
+          arg [-L/Users/frostie/pspdev/lib] ==> dir [/Users/frostie/pspdev/lib]
+          arg [-L/Users/frostie/pspdev/psp/lib] ==> dir [/Users/frostie/pspdev/psp/lib]
+          arg [-L/Users/frostie/pspdev/psp/sdk/lib] ==> dir [/Users/frostie/pspdev/psp/sdk/lib]
+          arg [-L/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0] ==> dir [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0]
+          arg [-L/Users/frostie/pspdev/bin/../lib/gcc] ==> dir [/Users/frostie/pspdev/bin/../lib/gcc]
+          arg [-L/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib] ==> dir [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib]
+          arg [-L/Users/frostie/pspdev/bin/../psp/lib] ==> dir [/Users/frostie/pspdev/bin/../psp/lib]
+          arg [-zmax-page-size=128] ==> ignore
+          arg [CMakeFiles/cmTC_a5c24.dir/CMakeCCompilerABI.c.obj] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lm] ==> lib [m]
+          arg [--start-group] ==> ignore
+          arg [-lpthreadglue] ==> lib [pthreadglue]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lcglue] ==> lib [cglue]
+          arg [-lc] ==> lib [c]
+          arg [--end-group] ==> ignore
+          arg [-lpsputility] ==> lib [psputility]
+          arg [-lpsprtc] ==> lib [psprtc]
+          arg [-lpspnet_inet] ==> lib [pspnet_inet]
+          arg [-lpspnet_resolver] ==> lib [pspnet_resolver]
+          arg [-lpspsdk] ==> lib [pspsdk]
+          arg [-lpspmodinfo] ==> lib [pspmodinfo]
+          arg [-lpspuser] ==> lib [pspuser]
+          arg [-lpspkernel] ==> lib [pspkernel]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o] ==> obj [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o]
+          arg [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o] ==> obj [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o]
+        ignore line: [/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper -fresolution=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccPxWQKL.res -flinker-output=exec /Users/frostie/pspdev/psp/lib/libpthread.a@0x5edaa /Users/frostie/pspdev/psp/lib/libpthread.a@0x60daa /Users/frostie/pspdev/psp/lib/libpthread.a@0x62fc2 /Users/frostie/pspdev/psp/lib/libpthread.a@0x64a0e /Users/frostie/pspdev/psp/lib/libpthread.a@0x1aae /Users/frostie/pspdev/psp/lib/libpthread.a@0x4fe6 /Users/frostie/pspdev/psp/lib/libpthread.a@0x6fda /Users/frostie/pspdev/psp/lib/libpthread.a@0xb406 /Users/frostie/pspdev/psp/lib/libpthread.a@0x19c7a /Users/frostie/pspdev/psp/lib/libpthread.a@0x1bace /Users/frostie/pspdev/psp/lib/libpthread.a@0x26592 /Users/frostie/pspdev/psp/lib/libpthread.a@0x52ef2 /Users/frostie/pspdev/psp/lib/libpthread.a@0x577f2 /Users/frostie/pspdev/psp/lib/libpthread.a@0x5b1be /Users/frostie/pspdev/psp/lib/libpthread.a@0x5cc92 /Users/frostie/pspdev/psp/lib/libpthread.a@0x66c5e /Users/frostie/pspdev/psp/lib/libpthread.a@0x68122 /Users/frostie/pspdev/psp/lib/libpthread.a@0x6a5de /Users/frostie/pspdev/psp/lib/libpthread.a@0x35ce ]
+        ignore line: [/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper -fresolution=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccPxWQKL.res -flinker-output=exec /Users/frostie/pspdev/psp/lib/libpthread.a@0x5edaa /Users/frostie/pspdev/psp/lib/libpthread.a@0x60daa /Users/frostie/pspdev/psp/lib/libpthread.a@0x62fc2 /Users/frostie/pspdev/psp/lib/libpthread.a@0x64a0e /Users/frostie/pspdev/psp/lib/libpthread.a@0x1aae /Users/frostie/pspdev/psp/lib/libpthread.a@0x4fe6 /Users/frostie/pspdev/psp/lib/libpthread.a@0x6fda /Users/frostie/pspdev/psp/lib/libpthread.a@0xb406 /Users/frostie/pspdev/psp/lib/libpthread.a@0x19c7a /Users/frostie/pspdev/psp/lib/libpthread.a@0x1bace /Users/frostie/pspdev/psp/lib/libpthread.a@0x26592 /Users/frostie/pspdev/psp/lib/libpthread.a@0x52ef2 /Users/frostie/pspdev/psp/lib/libpthread.a@0x577f2 /Users/frostie/pspdev/psp/lib/libpthread.a@0x5b1be /Users/frostie/pspdev/psp/lib/libpthread.a@0x5cc92 /Users/frostie/pspdev/psp/lib/libpthread.a@0x66c5e /Users/frostie/pspdev/psp/lib/libpthread.a@0x68122 /Users/frostie/pspdev/psp/lib/libpthread.a@0x6a5de /Users/frostie/pspdev/psp/lib/libpthread.a@0x35ce ]
+        ignore line: [/Users/frostie/pspdev/bin/psp-gcc @/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccK48ml7]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/Users/frostie/pspdev/bin/psp-gcc]
+        ignore line: [Target: psp]
+        ignore line: [Configured with: ../configure --quiet --prefix=/Users/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/Users/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --silent]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.1.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-v' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans-output-list=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//cc7r8IxJ.ltrans.out' '-fwpa' '-fresolution=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccPxWQKL.res' '-flinker-output=exec']
+        ignore line: [ /Users/frostie/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/lto1 -quiet -dumpbase ./cmTC_a5c24.wpa -mno-gpopt -mhard-float -msingle-float -mhard-float -msingle-float -O3 -version -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fltrans-output-list=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//cc7r8IxJ.ltrans.out -fwpa -fresolution=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccPxWQKL.res -flinker-output=exec @/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//cc6N2CRC]
+        ignore line: [GNU GIMPLE (GCC) version 14.1.0 (psp)]
+        ignore line: [	compiled by GNU C version Apple LLVM 15.0.0 (clang-1500.3.9.4)  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [COMPILER_PATH=/Users/frostie/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../lib/gcc/../../libexec/gcc/:/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../libexec/gcc/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/]
+        ignore line: [LIBRARY_PATH=/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../lib/gcc/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/Users/frostie/pspdev/bin/../psp/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-v' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans-output-list=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//cc7r8IxJ.ltrans.out' '-fwpa' '-fresolution=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccPxWQKL.res' '-flinker-output=exec' '-dumpdir' './cmTC_a5c24.wpa.']
+        ignore line: [/Users/frostie/pspdev/bin/psp-gcc @/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//cctZjOIA]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/Users/frostie/pspdev/bin/psp-gcc]
+        ignore line: [Target: psp]
+        ignore line: [Configured with: ../configure --quiet --prefix=/Users/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/Users/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --silent]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.1.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-v' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//cc7r8IxJ.ltrans0.ltrans.o']
+        ignore line: [ /Users/frostie/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/lto1 -quiet -dumpbase ./cmTC_a5c24.ltrans0.ltrans -mno-gpopt -mhard-float -msingle-float -mhard-float -msingle-float -O3 -version -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fltrans @/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccFYEC7j -o /var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccmnYRJO.s]
+        ignore line: [GNU GIMPLE (GCC) version 14.1.0 (psp)]
+        ignore line: [	compiled by GNU C version Apple LLVM 15.0.0 (clang-1500.3.9.4)  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-v' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//cc7r8IxJ.ltrans0.ltrans.o']
+        ignore line: [ /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/as -EL -O2 -mabi=eabi -mhard-float -mhard-float -msingle-float -msingle-float -o /var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//cc7r8IxJ.ltrans0.ltrans.o /var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccmnYRJO.s]
+        ignore line: [COMPILER_PATH=/Users/frostie/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../lib/gcc/../../libexec/gcc/:/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../libexec/gcc/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/]
+        ignore line: [LIBRARY_PATH=/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../lib/gcc/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/Users/frostie/pspdev/bin/../psp/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-v' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//cc7r8IxJ.ltrans0.ltrans.o' '-dumpdir' './cmTC_a5c24.ltrans0.ltrans.']
+        ignore line: [COLLECT_GCC_OPTIONS='-I' '/Users/frostie/pspdev/psp/include' '-I' '/Users/frostie/pspdev/psp/sdk/include' '-D' 'PSP' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-v' '-o' 'cmTC_a5c24' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_a5c24.']
+        ignore line: [/Users/frostie/pspdev/bin/psp-gcc -I/Users/frostie/pspdev/psp/include -I/Users/frostie/pspdev/psp/sdk/include -DPSP  -L/Users/frostie/pspdev/lib -L/Users/frostie/pspdev/psp/lib -L/Users/frostie/pspdev/psp/sdk/lib -Wl -zmax-page-size=128 -v CMakeFiles/cmTC_a5c24.dir/CMakeCCompilerABI.c.obj -o cmTC_a5c24   -L/Users/frostie/pspdev/lib  -L/Users/frostie/pspdev/psp/lib  -L/Users/frostie/pspdev/psp/sdk/lib]
+        ignore line: [gmake[1]: Leaving directory '/Users/frostie/Projects/PSPlayer/PSPBuild/CMakeFiles/CMakeScratch/TryCompile-M8FdYq']
+        ignore line: []
+        ignore line: []
+        collapse obj [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o] ==> [/Users/frostie/pspdev/psp/lib/crt0.o]
+        collapse obj [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o] ==> [/Users/frostie/pspdev/lib/gcc/psp/14.1.0/crti.o]
+        collapse obj [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o] ==> [/Users/frostie/pspdev/lib/gcc/psp/14.1.0/crtbegin.o]
+        collapse obj [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o] ==> [/Users/frostie/pspdev/lib/gcc/psp/14.1.0/crtend.o]
+        collapse obj [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o] ==> [/Users/frostie/pspdev/lib/gcc/psp/14.1.0/crtn.o]
+        collapse library dir [/Users/frostie/pspdev/lib] ==> [/Users/frostie/pspdev/lib]
+        collapse library dir [/Users/frostie/pspdev/psp/lib] ==> [/Users/frostie/pspdev/psp/lib]
+        collapse library dir [/Users/frostie/pspdev/psp/sdk/lib] ==> [/Users/frostie/pspdev/psp/sdk/lib]
+        collapse library dir [/Users/frostie/pspdev/lib] ==> [/Users/frostie/pspdev/lib]
+        collapse library dir [/Users/frostie/pspdev/psp/lib] ==> [/Users/frostie/pspdev/psp/lib]
+        collapse library dir [/Users/frostie/pspdev/psp/sdk/lib] ==> [/Users/frostie/pspdev/psp/sdk/lib]
+        collapse library dir [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0] ==> [/Users/frostie/pspdev/lib/gcc/psp/14.1.0]
+        collapse library dir [/Users/frostie/pspdev/bin/../lib/gcc] ==> [/Users/frostie/pspdev/lib/gcc]
+        collapse library dir [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib] ==> [/Users/frostie/pspdev/psp/lib]
+        collapse library dir [/Users/frostie/pspdev/bin/../psp/lib] ==> [/Users/frostie/pspdev/psp/lib]
+        implicit libs: [gcc;m;pthreadglue;pthread;cglue;c;psputility;psprtc;pspnet_inet;pspnet_resolver;pspsdk;pspmodinfo;pspuser;pspkernel;gcc]
+        implicit objs: [/Users/frostie/pspdev/psp/lib/crt0.o;/Users/frostie/pspdev/lib/gcc/psp/14.1.0/crti.o;/Users/frostie/pspdev/lib/gcc/psp/14.1.0/crtbegin.o;/Users/frostie/pspdev/lib/gcc/psp/14.1.0/crtend.o;/Users/frostie/pspdev/lib/gcc/psp/14.1.0/crtn.o]
+        implicit dirs: [/Users/frostie/pspdev/lib;/Users/frostie/pspdev/psp/lib;/Users/frostie/pspdev/psp/sdk/lib;/Users/frostie/pspdev/lib/gcc/psp/14.1.0;/Users/frostie/pspdev/lib/gcc]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/Users/frostie/Projects/PSPlayer/PSPBuild/CMakeFiles/CMakeScratch/TryCompile-VYFHp9"
+      binary: "/Users/frostie/Projects/PSPlayer/PSPBuild/CMakeFiles/CMakeScratch/TryCompile-VYFHp9"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-I/Users/frostie/pspdev/psp/include -I/Users/frostie/pspdev/psp/sdk/include -DPSP"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "-L/Users/frostie/pspdev/lib -L/Users/frostie/pspdev/psp/lib -L/Users/frostie/pspdev/psp/sdk/lib -Wl,-zmax-page-size=128"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/frostie/Projects/PSPlayer/PSPBuild/CMakeFiles/CMakeScratch/TryCompile-VYFHp9'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_baae1/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_baae1.dir/build.make CMakeFiles/cmTC_baae1.dir/build
+        gmake[1]: Entering directory '/Users/frostie/Projects/PSPlayer/PSPBuild/CMakeFiles/CMakeScratch/TryCompile-VYFHp9'
+        Building CXX object CMakeFiles/cmTC_baae1.dir/CMakeCXXCompilerABI.cpp.obj
+        /Users/frostie/pspdev/bin/psp-g++ -DPSP -D_PSP_FW_VERSION=600 -D__PSP__  -I/Users/frostie/pspdev/psp/include -I/Users/frostie/pspdev/psp/sdk/include -DPSP    -v -o CMakeFiles/cmTC_baae1.dir/CMakeCXXCompilerABI.cpp.obj -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/Users/frostie/pspdev/bin/psp-g++
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/Users/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/Users/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/Users/frostie/pspdev/psp/include' '-I' '/Users/frostie/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_baae1.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_baae1.dir/'
+         /Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/cc1plus -quiet -v -I /Users/frostie/pspdev/psp/include -I /Users/frostie/pspdev/psp/sdk/include -iprefix /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/ -isysroot /Users/frostie/pspdev/bin/../psp -DPSP=1 -D__PSP__=1 -D_PSP=1 -D__psp__=1 -D PSP -D _PSP_FW_VERSION=600 -D __PSP__ -D PSP /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_baae1.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mhard-float -msingle-float -version -o /var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccpFimlw.s
+        GNU C++17 (GCC) version 14.1.0 (psp)
+        	compiled by GNU C version Apple LLVM 15.0.0 (clang-1500.3.9.4), GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/Users/frostie/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0"
+        ignoring duplicate directory "/Users/frostie/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/psp"
+        ignoring duplicate directory "/Users/frostie/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/backward"
+        ignoring duplicate directory "/Users/frostie/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/include"
+        ignoring nonexistent directory "/Users/frostie/pspdev/bin/../psp/usr/local/include"
+        ignoring duplicate directory "/Users/frostie/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/include-fixed"
+        ignoring duplicate directory "/Users/frostie/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include"
+        ignoring duplicate directory "/Users/frostie/pspdev/bin/../psp/include"
+        ignoring duplicate directory "/Users/frostie/pspdev/psp/include"
+          as it is a non-system directory that duplicates a system directory
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Users/frostie/pspdev/psp/sdk/include
+         /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0
+         /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/psp
+         /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/backward
+         /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/include
+         /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/include-fixed
+         /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include
+        End of search list.
+        Compiler executable checksum: 31b9cdbaef93a0fa9325b0f8b06997ac
+        COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/Users/frostie/pspdev/psp/include' '-I' '/Users/frostie/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_baae1.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_baae1.dir/'
+         /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/as -EL -O1 -mabi=eabi -mhard-float -msingle-float -o CMakeFiles/cmTC_baae1.dir/CMakeCXXCompilerABI.cpp.obj /var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccpFimlw.s
+        COMPILER_PATH=/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../libexec/gcc/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/
+        LIBRARY_PATH=/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../lib/gcc/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/Users/frostie/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/Users/frostie/pspdev/psp/include' '-I' '/Users/frostie/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_baae1.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_baae1.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_baae1
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_baae1.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/Users/frostie/pspdev/bin/psp-g++
+        COLLECT_LTO_WRAPPER=/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/Users/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/Users/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.1.0 (GCC) 
+        COMPILER_PATH=/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../libexec/gcc/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/
+        LIBRARY_PATH=/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../lib/gcc/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/Users/frostie/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-I' '/Users/frostie/pspdev/psp/include' '-I' '/Users/frostie/pspdev/psp/sdk/include' '-D' 'PSP' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-v' '-o' 'cmTC_baae1' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_baae1.'
+         /Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/collect2 -plugin /Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/liblto_plugin.so -plugin-opt=/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccvSVFUD.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lpthreadglue -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lcglue -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lpsputility -plugin-opt=-pass-through=-lpsprtc -plugin-opt=-pass-through=-lpspnet_inet -plugin-opt=-pass-through=-lpspnet_resolver -plugin-opt=-pass-through=-lpspsdk -plugin-opt=-pass-through=-lpspmodinfo -plugin-opt=-pass-through=-lpspuser -plugin-opt=-pass-through=-lpspkernel -plugin-opt=-pass-through=-lgcc --sysroot=/Users/frostie/pspdev/bin/../psp -EL -o cmTC_baae1 /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o -L/Users/frostie/pspdev/lib -L/Users/frostie/pspdev/psp/lib -L/Users/frostie/pspdev/psp/sdk/lib -L/Users/frostie/pspdev/lib -L/Users/frostie/pspdev/psp/lib -L/Users/frostie/pspdev/psp/sdk/lib -L/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0 -L/Users/frostie/pspdev/bin/../lib/gcc -L/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib -L/Users/frostie/pspdev/bin/../psp/lib -zmax-page-size=128 CMakeFiles/cmTC_baae1.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lm --start-group -lpthreadglue -lpthread -lcglue -lc --end-group -lpsputility -lpsprtc -lpspnet_inet -lpspnet_resolver -lpspsdk -lpspmodinfo -lpspuser -lpspkernel -lgcc /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o
+        /Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper -fresolution=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccvSVFUD.res -flinker-output=exec /Users/frostie/pspdev/psp/lib/libpthread.a@0x5edaa /Users/frostie/pspdev/psp/lib/libpthread.a@0x60daa /Users/frostie/pspdev/psp/lib/libpthread.a@0x62fc2 /Users/frostie/pspdev/psp/lib/libpthread.a@0x64a0e /Users/frostie/pspdev/psp/lib/libpthread.a@0x1aae /Users/frostie/pspdev/psp/lib/libpthread.a@0x4fe6 /Users/frostie/pspdev/psp/lib/libpthread.a@0x6fda /Users/frostie/pspdev/psp/lib/libpthread.a@0xb406 /Users/frostie/pspdev/psp/lib/libpthread.a@0x19c7a /Users/frostie/pspdev/psp/lib/libpthread.a@0x1bace /Users/frostie/pspdev/psp/lib/libpthread.a@0x26592 /Users/frostie/pspdev/psp/lib/libpthread.a@0x52ef2 /Users/frostie/pspdev/psp/lib/libpthread.a@0x577f2 /Users/frostie/pspdev/psp/lib/libpthread.a@0x5b1be /Users/frostie/pspdev/psp/lib/libpthread.a@0x5cc92 /Users/frostie/pspdev/psp/lib/libpthread.a@0x66c5e /Users/frostie/pspdev/psp/lib/libpthread.a@0x68122 /Users/frostie/pspdev/psp/lib/libpthread.a@0x6a5de /Users/frostie/pspdev/psp/lib/libpthread.a@0x35ce 
+        /Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper -fresolution=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccvSVFUD.res -flinker-output=exec /Users/frostie/pspdev/psp/lib/libpthread.a@0x5edaa /Users/frostie/pspdev/psp/lib/libpthread.a@0x60daa /Users/frostie/pspdev/psp/lib/libpthread.a@0x62fc2 /Users/frostie/pspdev/psp/lib/libpthread.a@0x64a0e /Users/frostie/pspdev/psp/lib/libpthread.a@0x1aae /Users/frostie/pspdev/psp/lib/libpthread.a@0x4fe6 /Users/frostie/pspdev/psp/lib/libpthread.a@0x6fda /Users/frostie/pspdev/psp/lib/libpthread.a@0xb406 /Users/frostie/pspdev/psp/lib/libpthread.a@0x19c7a /Users/frostie/pspdev/psp/lib/libpthread.a@0x1bace /Users/frostie/pspdev/psp/lib/libpthread.a@0x26592 /Users/frostie/pspdev/psp/lib/libpthread.a@0x52ef2 /Users/frostie/pspdev/psp/lib/libpthread.a@0x577f2 /Users/frostie/pspdev/psp/lib/libpthread.a@0x5b1be /Users/frostie/pspdev/psp/lib/libpthread.a@0x5cc92 /Users/frostie/pspdev/psp/lib/libpthread.a@0x66c5e /Users/frostie/pspdev/psp/lib/libpthread.a@0x68122 /Users/frostie/pspdev/psp/lib/libpthread.a@0x6a5de /Users/frostie/pspdev/psp/lib/libpthread.a@0x35ce 
+        /Users/frostie/pspdev/bin/psp-g++ @/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccSyeO8U
+        Using built-in specs.
+        COLLECT_GCC=/Users/frostie/pspdev/bin/psp-g++
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/Users/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/Users/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-v' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans-output-list=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//cc7FwdDw.ltrans.out' '-fwpa' '-fresolution=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccvSVFUD.res' '-flinker-output=exec'
+         /Users/frostie/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/lto1 -quiet -dumpbase ./cmTC_baae1.wpa -mno-gpopt -mhard-float -msingle-float -mhard-float -msingle-float -O3 -version -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fltrans-output-list=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//cc7FwdDw.ltrans.out -fwpa -fresolution=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccvSVFUD.res -flinker-output=exec @/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccRTJBjk
+        GNU GIMPLE (GCC) version 14.1.0 (psp)
+        	compiled by GNU C version Apple LLVM 15.0.0 (clang-1500.3.9.4), GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        COMPILER_PATH=/Users/frostie/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../lib/gcc/../../libexec/gcc/:/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../libexec/gcc/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/
+        LIBRARY_PATH=/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../lib/gcc/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/Users/frostie/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-v' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans-output-list=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//cc7FwdDw.ltrans.out' '-fwpa' '-fresolution=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccvSVFUD.res' '-flinker-output=exec' '-dumpdir' './cmTC_baae1.wpa.'
+        /Users/frostie/pspdev/bin/psp-g++ @/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccOvL85g
+        Using built-in specs.
+        COLLECT_GCC=/Users/frostie/pspdev/bin/psp-g++
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/Users/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/Users/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-v' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//cc7FwdDw.ltrans0.ltrans.o'
+         /Users/frostie/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/lto1 -quiet -dumpbase ./cmTC_baae1.ltrans0.ltrans -mno-gpopt -mhard-float -msingle-float -mhard-float -msingle-float -O3 -version -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fltrans @/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccHBwRxT -o /var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccvKhbWL.s
+        GNU GIMPLE (GCC) version 14.1.0 (psp)
+        	compiled by GNU C version Apple LLVM 15.0.0 (clang-1500.3.9.4), GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-v' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//cc7FwdDw.ltrans0.ltrans.o'
+         /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/as -EL -O2 -mabi=eabi -mhard-float -mhard-float -msingle-float -msingle-float -o /var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//cc7FwdDw.ltrans0.ltrans.o /var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccvKhbWL.s
+        COMPILER_PATH=/Users/frostie/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../lib/gcc/../../libexec/gcc/:/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../libexec/gcc/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/
+        LIBRARY_PATH=/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../lib/gcc/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/Users/frostie/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-v' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//cc7FwdDw.ltrans0.ltrans.o' '-dumpdir' './cmTC_baae1.ltrans0.ltrans.'
+        COLLECT_GCC_OPTIONS='-I' '/Users/frostie/pspdev/psp/include' '-I' '/Users/frostie/pspdev/psp/sdk/include' '-D' 'PSP' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-v' '-o' 'cmTC_baae1' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_baae1.'
+        /Users/frostie/pspdev/bin/psp-g++ -I/Users/frostie/pspdev/psp/include -I/Users/frostie/pspdev/psp/sdk/include -DPSP  -L/Users/frostie/pspdev/lib -L/Users/frostie/pspdev/psp/lib -L/Users/frostie/pspdev/psp/sdk/lib -Wl,-zmax-page-size=128 -v CMakeFiles/cmTC_baae1.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_baae1   -L/Users/frostie/pspdev/lib  -L/Users/frostie/pspdev/psp/lib  -L/Users/frostie/pspdev/psp/sdk/lib
+        gmake[1]: Leaving directory '/Users/frostie/Projects/PSPlayer/PSPBuild/CMakeFiles/CMakeScratch/TryCompile-VYFHp9'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/Users/frostie/pspdev/psp/sdk/include]
+          add: [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0]
+          add: [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/psp]
+          add: [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/backward]
+          add: [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/include]
+          add: [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/include-fixed]
+          add: [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include]
+        end of search list found
+        collapse include dir [/Users/frostie/pspdev/psp/sdk/include] ==> [/Users/frostie/pspdev/psp/sdk/include]
+        collapse include dir [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0] ==> [/Users/frostie/pspdev/psp/include/c++/14.1.0]
+        collapse include dir [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/psp] ==> [/Users/frostie/pspdev/psp/include/c++/14.1.0/psp]
+        collapse include dir [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/backward] ==> [/Users/frostie/pspdev/psp/include/c++/14.1.0/backward]
+        collapse include dir [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/include] ==> [/Users/frostie/pspdev/lib/gcc/psp/14.1.0/include]
+        collapse include dir [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/include-fixed] ==> [/Users/frostie/pspdev/lib/gcc/psp/14.1.0/include-fixed]
+        collapse include dir [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include] ==> [/Users/frostie/pspdev/psp/include]
+        implicit include dirs: [/Users/frostie/pspdev/psp/sdk/include;/Users/frostie/pspdev/psp/include/c++/14.1.0;/Users/frostie/pspdev/psp/include/c++/14.1.0/psp;/Users/frostie/pspdev/psp/include/c++/14.1.0/backward;/Users/frostie/pspdev/lib/gcc/psp/14.1.0/include;/Users/frostie/pspdev/lib/gcc/psp/14.1.0/include-fixed;/Users/frostie/pspdev/psp/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/Users/frostie/Projects/PSPlayer/PSPBuild/CMakeFiles/CMakeScratch/TryCompile-VYFHp9']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_baae1/fast]
+        ignore line: [/opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_baae1.dir/build.make CMakeFiles/cmTC_baae1.dir/build]
+        ignore line: [gmake[1]: Entering directory '/Users/frostie/Projects/PSPlayer/PSPBuild/CMakeFiles/CMakeScratch/TryCompile-VYFHp9']
+        ignore line: [Building CXX object CMakeFiles/cmTC_baae1.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [/Users/frostie/pspdev/bin/psp-g++ -DPSP -D_PSP_FW_VERSION=600 -D__PSP__  -I/Users/frostie/pspdev/psp/include -I/Users/frostie/pspdev/psp/sdk/include -DPSP    -v -o CMakeFiles/cmTC_baae1.dir/CMakeCXXCompilerABI.cpp.obj -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/Users/frostie/pspdev/bin/psp-g++]
+        ignore line: [Target: psp]
+        ignore line: [Configured with: ../configure --quiet --prefix=/Users/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/Users/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --silent]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.1.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/Users/frostie/pspdev/psp/include' '-I' '/Users/frostie/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_baae1.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_baae1.dir/']
+        ignore line: [ /Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/cc1plus -quiet -v -I /Users/frostie/pspdev/psp/include -I /Users/frostie/pspdev/psp/sdk/include -iprefix /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/ -isysroot /Users/frostie/pspdev/bin/../psp -DPSP=1 -D__PSP__=1 -D_PSP=1 -D__psp__=1 -D PSP -D _PSP_FW_VERSION=600 -D __PSP__ -D PSP /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_baae1.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mhard-float -msingle-float -version -o /var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccpFimlw.s]
+        ignore line: [GNU C++17 (GCC) version 14.1.0 (psp)]
+        ignore line: [	compiled by GNU C version Apple LLVM 15.0.0 (clang-1500.3.9.4)  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/Users/frostie/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0"]
+        ignore line: [ignoring duplicate directory "/Users/frostie/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/psp"]
+        ignore line: [ignoring duplicate directory "/Users/frostie/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/backward"]
+        ignore line: [ignoring duplicate directory "/Users/frostie/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/include"]
+        ignore line: [ignoring nonexistent directory "/Users/frostie/pspdev/bin/../psp/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/Users/frostie/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "/Users/frostie/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include"]
+        ignore line: [ignoring duplicate directory "/Users/frostie/pspdev/bin/../psp/include"]
+        ignore line: [ignoring duplicate directory "/Users/frostie/pspdev/psp/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /Users/frostie/pspdev/psp/sdk/include]
+        ignore line: [ /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0]
+        ignore line: [ /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/psp]
+        ignore line: [ /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/backward]
+        ignore line: [ /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/include]
+        ignore line: [ /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/include-fixed]
+        ignore line: [ /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 31b9cdbaef93a0fa9325b0f8b06997ac]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/Users/frostie/pspdev/psp/include' '-I' '/Users/frostie/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_baae1.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_baae1.dir/']
+        ignore line: [ /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/as -EL -O1 -mabi=eabi -mhard-float -msingle-float -o CMakeFiles/cmTC_baae1.dir/CMakeCXXCompilerABI.cpp.obj /var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccpFimlw.s]
+        ignore line: [COMPILER_PATH=/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../libexec/gcc/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/]
+        ignore line: [LIBRARY_PATH=/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../lib/gcc/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/Users/frostie/pspdev/bin/../psp/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/Users/frostie/pspdev/psp/include' '-I' '/Users/frostie/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_baae1.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_baae1.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_baae1]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_baae1.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/Users/frostie/pspdev/bin/psp-g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper]
+        ignore line: [Target: psp]
+        ignore line: [Configured with: ../configure --quiet --prefix=/Users/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/Users/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --silent]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.1.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../libexec/gcc/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/]
+        ignore line: [LIBRARY_PATH=/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../lib/gcc/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/Users/frostie/pspdev/bin/../psp/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-I' '/Users/frostie/pspdev/psp/include' '-I' '/Users/frostie/pspdev/psp/sdk/include' '-D' 'PSP' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-v' '-o' 'cmTC_baae1' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_baae1.']
+        link line: [ /Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/collect2 -plugin /Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/liblto_plugin.so -plugin-opt=/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccvSVFUD.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lpthreadglue -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lcglue -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lpsputility -plugin-opt=-pass-through=-lpsprtc -plugin-opt=-pass-through=-lpspnet_inet -plugin-opt=-pass-through=-lpspnet_resolver -plugin-opt=-pass-through=-lpspsdk -plugin-opt=-pass-through=-lpspmodinfo -plugin-opt=-pass-through=-lpspuser -plugin-opt=-pass-through=-lpspkernel -plugin-opt=-pass-through=-lgcc --sysroot=/Users/frostie/pspdev/bin/../psp -EL -o cmTC_baae1 /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o -L/Users/frostie/pspdev/lib -L/Users/frostie/pspdev/psp/lib -L/Users/frostie/pspdev/psp/sdk/lib -L/Users/frostie/pspdev/lib -L/Users/frostie/pspdev/psp/lib -L/Users/frostie/pspdev/psp/sdk/lib -L/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0 -L/Users/frostie/pspdev/bin/../lib/gcc -L/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib -L/Users/frostie/pspdev/bin/../psp/lib -zmax-page-size=128 CMakeFiles/cmTC_baae1.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lm --start-group -lpthreadglue -lpthread -lcglue -lc --end-group -lpsputility -lpsprtc -lpspnet_inet -lpspnet_resolver -lpspsdk -lpspmodinfo -lpspuser -lpspkernel -lgcc /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o]
+          arg [/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccvSVFUD.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lm] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthreadglue] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lcglue] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpsputility] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpsprtc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspnet_inet] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspnet_resolver] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspsdk] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspmodinfo] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspuser] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspkernel] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--sysroot=/Users/frostie/pspdev/bin/../psp] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_baae1] ==> ignore
+          arg [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o] ==> obj [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o]
+          arg [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o] ==> obj [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o]
+          arg [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o] ==> obj [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o]
+          arg [-L/Users/frostie/pspdev/lib] ==> dir [/Users/frostie/pspdev/lib]
+          arg [-L/Users/frostie/pspdev/psp/lib] ==> dir [/Users/frostie/pspdev/psp/lib]
+          arg [-L/Users/frostie/pspdev/psp/sdk/lib] ==> dir [/Users/frostie/pspdev/psp/sdk/lib]
+          arg [-L/Users/frostie/pspdev/lib] ==> dir [/Users/frostie/pspdev/lib]
+          arg [-L/Users/frostie/pspdev/psp/lib] ==> dir [/Users/frostie/pspdev/psp/lib]
+          arg [-L/Users/frostie/pspdev/psp/sdk/lib] ==> dir [/Users/frostie/pspdev/psp/sdk/lib]
+          arg [-L/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0] ==> dir [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0]
+          arg [-L/Users/frostie/pspdev/bin/../lib/gcc] ==> dir [/Users/frostie/pspdev/bin/../lib/gcc]
+          arg [-L/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib] ==> dir [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib]
+          arg [-L/Users/frostie/pspdev/bin/../psp/lib] ==> dir [/Users/frostie/pspdev/bin/../psp/lib]
+          arg [-zmax-page-size=128] ==> ignore
+          arg [CMakeFiles/cmTC_baae1.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lm] ==> lib [m]
+          arg [--start-group] ==> ignore
+          arg [-lpthreadglue] ==> lib [pthreadglue]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lcglue] ==> lib [cglue]
+          arg [-lc] ==> lib [c]
+          arg [--end-group] ==> ignore
+          arg [-lpsputility] ==> lib [psputility]
+          arg [-lpsprtc] ==> lib [psprtc]
+          arg [-lpspnet_inet] ==> lib [pspnet_inet]
+          arg [-lpspnet_resolver] ==> lib [pspnet_resolver]
+          arg [-lpspsdk] ==> lib [pspsdk]
+          arg [-lpspmodinfo] ==> lib [pspmodinfo]
+          arg [-lpspuser] ==> lib [pspuser]
+          arg [-lpspkernel] ==> lib [pspkernel]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o] ==> obj [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o]
+          arg [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o] ==> obj [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o]
+        ignore line: [/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper -fresolution=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccvSVFUD.res -flinker-output=exec /Users/frostie/pspdev/psp/lib/libpthread.a@0x5edaa /Users/frostie/pspdev/psp/lib/libpthread.a@0x60daa /Users/frostie/pspdev/psp/lib/libpthread.a@0x62fc2 /Users/frostie/pspdev/psp/lib/libpthread.a@0x64a0e /Users/frostie/pspdev/psp/lib/libpthread.a@0x1aae /Users/frostie/pspdev/psp/lib/libpthread.a@0x4fe6 /Users/frostie/pspdev/psp/lib/libpthread.a@0x6fda /Users/frostie/pspdev/psp/lib/libpthread.a@0xb406 /Users/frostie/pspdev/psp/lib/libpthread.a@0x19c7a /Users/frostie/pspdev/psp/lib/libpthread.a@0x1bace /Users/frostie/pspdev/psp/lib/libpthread.a@0x26592 /Users/frostie/pspdev/psp/lib/libpthread.a@0x52ef2 /Users/frostie/pspdev/psp/lib/libpthread.a@0x577f2 /Users/frostie/pspdev/psp/lib/libpthread.a@0x5b1be /Users/frostie/pspdev/psp/lib/libpthread.a@0x5cc92 /Users/frostie/pspdev/psp/lib/libpthread.a@0x66c5e /Users/frostie/pspdev/psp/lib/libpthread.a@0x68122 /Users/frostie/pspdev/psp/lib/libpthread.a@0x6a5de /Users/frostie/pspdev/psp/lib/libpthread.a@0x35ce ]
+        ignore line: [/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper -fresolution=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccvSVFUD.res -flinker-output=exec /Users/frostie/pspdev/psp/lib/libpthread.a@0x5edaa /Users/frostie/pspdev/psp/lib/libpthread.a@0x60daa /Users/frostie/pspdev/psp/lib/libpthread.a@0x62fc2 /Users/frostie/pspdev/psp/lib/libpthread.a@0x64a0e /Users/frostie/pspdev/psp/lib/libpthread.a@0x1aae /Users/frostie/pspdev/psp/lib/libpthread.a@0x4fe6 /Users/frostie/pspdev/psp/lib/libpthread.a@0x6fda /Users/frostie/pspdev/psp/lib/libpthread.a@0xb406 /Users/frostie/pspdev/psp/lib/libpthread.a@0x19c7a /Users/frostie/pspdev/psp/lib/libpthread.a@0x1bace /Users/frostie/pspdev/psp/lib/libpthread.a@0x26592 /Users/frostie/pspdev/psp/lib/libpthread.a@0x52ef2 /Users/frostie/pspdev/psp/lib/libpthread.a@0x577f2 /Users/frostie/pspdev/psp/lib/libpthread.a@0x5b1be /Users/frostie/pspdev/psp/lib/libpthread.a@0x5cc92 /Users/frostie/pspdev/psp/lib/libpthread.a@0x66c5e /Users/frostie/pspdev/psp/lib/libpthread.a@0x68122 /Users/frostie/pspdev/psp/lib/libpthread.a@0x6a5de /Users/frostie/pspdev/psp/lib/libpthread.a@0x35ce ]
+        ignore line: [/Users/frostie/pspdev/bin/psp-g++ @/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccSyeO8U]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/Users/frostie/pspdev/bin/psp-g++]
+        ignore line: [Target: psp]
+        ignore line: [Configured with: ../configure --quiet --prefix=/Users/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/Users/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --silent]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.1.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-v' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans-output-list=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//cc7FwdDw.ltrans.out' '-fwpa' '-fresolution=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccvSVFUD.res' '-flinker-output=exec']
+        ignore line: [ /Users/frostie/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/lto1 -quiet -dumpbase ./cmTC_baae1.wpa -mno-gpopt -mhard-float -msingle-float -mhard-float -msingle-float -O3 -version -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fltrans-output-list=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//cc7FwdDw.ltrans.out -fwpa -fresolution=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccvSVFUD.res -flinker-output=exec @/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccRTJBjk]
+        ignore line: [GNU GIMPLE (GCC) version 14.1.0 (psp)]
+        ignore line: [	compiled by GNU C version Apple LLVM 15.0.0 (clang-1500.3.9.4)  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [COMPILER_PATH=/Users/frostie/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../lib/gcc/../../libexec/gcc/:/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../libexec/gcc/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/]
+        ignore line: [LIBRARY_PATH=/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../lib/gcc/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/Users/frostie/pspdev/bin/../psp/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-v' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans-output-list=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//cc7FwdDw.ltrans.out' '-fwpa' '-fresolution=/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccvSVFUD.res' '-flinker-output=exec' '-dumpdir' './cmTC_baae1.wpa.']
+        ignore line: [/Users/frostie/pspdev/bin/psp-g++ @/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccOvL85g]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/Users/frostie/pspdev/bin/psp-g++]
+        ignore line: [Target: psp]
+        ignore line: [Configured with: ../configure --quiet --prefix=/Users/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/Users/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --silent]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.1.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-v' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//cc7FwdDw.ltrans0.ltrans.o']
+        ignore line: [ /Users/frostie/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/lto1 -quiet -dumpbase ./cmTC_baae1.ltrans0.ltrans -mno-gpopt -mhard-float -msingle-float -mhard-float -msingle-float -O3 -version -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fltrans @/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccHBwRxT -o /var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccvKhbWL.s]
+        ignore line: [GNU GIMPLE (GCC) version 14.1.0 (psp)]
+        ignore line: [	compiled by GNU C version Apple LLVM 15.0.0 (clang-1500.3.9.4)  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-v' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//cc7FwdDw.ltrans0.ltrans.o']
+        ignore line: [ /Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/as -EL -O2 -mabi=eabi -mhard-float -mhard-float -msingle-float -msingle-float -o /var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//cc7FwdDw.ltrans0.ltrans.o /var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//ccvKhbWL.s]
+        ignore line: [COMPILER_PATH=/Users/frostie/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../lib/gcc/../../libexec/gcc/:/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../libexec/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../libexec/gcc/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/]
+        ignore line: [LIBRARY_PATH=/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/:/Users/frostie/pspdev/bin/../lib/gcc/:/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/Users/frostie/pspdev/bin/../psp/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-v' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/var/folders/h5/cv6qdgjn59772t5xkrfq_jtc0000gn/T//cc7FwdDw.ltrans0.ltrans.o' '-dumpdir' './cmTC_baae1.ltrans0.ltrans.']
+        ignore line: [COLLECT_GCC_OPTIONS='-I' '/Users/frostie/pspdev/psp/include' '-I' '/Users/frostie/pspdev/psp/sdk/include' '-D' 'PSP' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-v' '-o' 'cmTC_baae1' '-L/Users/frostie/pspdev/lib' '-L/Users/frostie/pspdev/psp/lib' '-L/Users/frostie/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_baae1.']
+        ignore line: [/Users/frostie/pspdev/bin/psp-g++ -I/Users/frostie/pspdev/psp/include -I/Users/frostie/pspdev/psp/sdk/include -DPSP  -L/Users/frostie/pspdev/lib -L/Users/frostie/pspdev/psp/lib -L/Users/frostie/pspdev/psp/sdk/lib -Wl -zmax-page-size=128 -v CMakeFiles/cmTC_baae1.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_baae1   -L/Users/frostie/pspdev/lib  -L/Users/frostie/pspdev/psp/lib  -L/Users/frostie/pspdev/psp/sdk/lib]
+        ignore line: [gmake[1]: Leaving directory '/Users/frostie/Projects/PSPlayer/PSPBuild/CMakeFiles/CMakeScratch/TryCompile-VYFHp9']
+        ignore line: []
+        ignore line: []
+        collapse obj [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o] ==> [/Users/frostie/pspdev/psp/lib/crt0.o]
+        collapse obj [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o] ==> [/Users/frostie/pspdev/lib/gcc/psp/14.1.0/crti.o]
+        collapse obj [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o] ==> [/Users/frostie/pspdev/lib/gcc/psp/14.1.0/crtbegin.o]
+        collapse obj [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o] ==> [/Users/frostie/pspdev/lib/gcc/psp/14.1.0/crtend.o]
+        collapse obj [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o] ==> [/Users/frostie/pspdev/lib/gcc/psp/14.1.0/crtn.o]
+        collapse library dir [/Users/frostie/pspdev/lib] ==> [/Users/frostie/pspdev/lib]
+        collapse library dir [/Users/frostie/pspdev/psp/lib] ==> [/Users/frostie/pspdev/psp/lib]
+        collapse library dir [/Users/frostie/pspdev/psp/sdk/lib] ==> [/Users/frostie/pspdev/psp/sdk/lib]
+        collapse library dir [/Users/frostie/pspdev/lib] ==> [/Users/frostie/pspdev/lib]
+        collapse library dir [/Users/frostie/pspdev/psp/lib] ==> [/Users/frostie/pspdev/psp/lib]
+        collapse library dir [/Users/frostie/pspdev/psp/sdk/lib] ==> [/Users/frostie/pspdev/psp/sdk/lib]
+        collapse library dir [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0] ==> [/Users/frostie/pspdev/lib/gcc/psp/14.1.0]
+        collapse library dir [/Users/frostie/pspdev/bin/../lib/gcc] ==> [/Users/frostie/pspdev/lib/gcc]
+        collapse library dir [/Users/frostie/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib] ==> [/Users/frostie/pspdev/psp/lib]
+        collapse library dir [/Users/frostie/pspdev/bin/../psp/lib] ==> [/Users/frostie/pspdev/psp/lib]
+        implicit libs: [stdc++;m;gcc;m;pthreadglue;pthread;cglue;c;psputility;psprtc;pspnet_inet;pspnet_resolver;pspsdk;pspmodinfo;pspuser;pspkernel;gcc]
+        implicit objs: [/Users/frostie/pspdev/psp/lib/crt0.o;/Users/frostie/pspdev/lib/gcc/psp/14.1.0/crti.o;/Users/frostie/pspdev/lib/gcc/psp/14.1.0/crtbegin.o;/Users/frostie/pspdev/lib/gcc/psp/14.1.0/crtend.o;/Users/frostie/pspdev/lib/gcc/psp/14.1.0/crtn.o]
+        implicit dirs: [/Users/frostie/pspdev/lib;/Users/frostie/pspdev/psp/lib;/Users/frostie/pspdev/psp/sdk/lib;/Users/frostie/pspdev/lib/gcc/psp/14.1.0;/Users/frostie/pspdev/lib/gcc]
+        implicit fwks: []
+      
+      
+...

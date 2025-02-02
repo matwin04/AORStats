@@ -1,0 +1,3 @@
+/Users/frostie/Projects/PSPlayer/PSPBuild/CMakeFiles/PSPlayer.dir
+/Users/frostie/Projects/PSPlayer/PSPBuild/CMakeFiles/edit_cache.dir
+/Users/frostie/Projects/PSPlayer/PSPBuild/CMakeFiles/rebuild_cache.dir
