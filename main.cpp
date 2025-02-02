@@ -10,7 +10,7 @@ void setupPSP() {
 int main(int argc,char *argv[]) {
     setupPSP();
     SDL_Init(SDL_INIT_AUDIO);
-    Mix_OpenAudio(44100,MIX_DEFAULT_FORMAT,2,2048);
+    Mix_OpenAudio(22050,AUDIO_S16SYS,2,512);
 
     Mix_Music *music = Mix_LoadMUS("test.mp3");
     if (!music) {
@@ -30,7 +30,7 @@ int main(int argc,char *argv[]) {
                 }
             }
         }
-        SDL_Delay(100);
+        SDL_Delay(50);
     }
     Mix_FreeMusic(music);
     Mix_CloseAudio();
